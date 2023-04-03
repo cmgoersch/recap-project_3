@@ -6,8 +6,8 @@ export function createCharacterCard() {
           <div class="card__image-container">
             <img
               class="card__image"
-              src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
-              alt="Rick Sanchez"
+              src="${results.image}"
+              alt="${results.name}"
             />
             <div class="card__image-gradient"></div>
           </div>
