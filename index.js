@@ -53,3 +53,10 @@ nextButton.addEventListener("click", () => {
 });
 
 fetchCharacters();
+
+searchBar.addEventListener("submit", (event) => {
+  event.preventDefault();
+  searchQuery = searchBar.querySelector("input").value;
+  fetchCharacters();
+  searchBar.reset();
+});
