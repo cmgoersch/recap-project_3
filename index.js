@@ -61,9 +61,11 @@ function onSubmit(event) {
   fetchCharacters();
   event.target.reset();
 }
-
+const searchBarContainer = document.querySelector(
+  '[data-js="search-bar-container"]'
+);
 const searchBar = createSearchBar(onSubmit);
-navigation.appendChild(searchBar);
+searchBarContainer.appendChild(searchBar);
 
 const pagination = createPagination(page, maxPage, onPrevClick, onNextClick);
 navigation.appendChild(pagination);
